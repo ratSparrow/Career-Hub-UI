@@ -1,5 +1,5 @@
 const Banner = () => {
-  return <div>This is banner</div>;
+  return <div className="text-5xl text-center">Homepage banner</div>;
 };
 
 export default Banner;
