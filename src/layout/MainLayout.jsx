@@ -1,19 +1,15 @@
 import Footer from '../components/shared/Footer';
 import Header from '../components/shared/Header';
-import PropTypes from 'prop-types';
+import { Outlet } from 'react-router-dom';
 
-const MainLayout = ({ children }) => {
+const MainLayout = () => {
   return (
     <>
       <Header></Header>
-      {children}
+      <Outlet />
       <Footer></Footer>
     </>
   );
 };
 
 export default MainLayout;
-
-MainLayout.propTypes = {
-  children: PropTypes.children,
-};

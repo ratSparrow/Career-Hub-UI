@@ -1,14 +1,22 @@
+import AppliedJobs from '../page/applied-jobs/AppliedJobs';
+import ErrorPage from '../page/ErrorPage';
 import Homepage from '../page/Homepage';
+import MainLayout from '../layout/MainLayout';
 import { createBrowserRouter } from 'react-router-dom';
 
 const MainRouter = createBrowserRouter([
   {
     path: '/',
-    element: <Homepage />,
+    element: <MainLayout />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: '/',
-        element: <div>Banner</div>,
+        element: <Homepage />,
+      },
+      {
+        path: '/jobs',
+        element: <AppliedJobs></AppliedJobs>,
       },
     ],
   },

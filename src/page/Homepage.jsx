@@ -1,11 +1,10 @@
-import MainLayout from '../layout/MainLayout';
-import { Outlet } from 'react-router-dom';
+import Banner from '../components/home/Banner';
 
 const Homepage = () => {
   return (
-    <MainLayout>
-      <Outlet />
-    </MainLayout>
+    <>
+      <Banner />
+    </>
   );
 };
 
