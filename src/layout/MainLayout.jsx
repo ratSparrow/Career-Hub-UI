@@ -4,11 +4,13 @@ import { Outlet } from 'react-router-dom';
 
 const MainLayout = () => {
   return (
-    <>
-      <Header></Header>
-      <Outlet />
+    <div>
+      <div className="max-w-6xl mx-auto min-h-screen">
+        <Header></Header>
+        <Outlet />
+      </div>
       <Footer></Footer>
-    </>
+    </div>
   );
 };
 
